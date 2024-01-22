@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+::-webkit-scrollbar{
+    width: 1px;
+}
+:root{
+    --black:red;
+}
+body{
+    background-color: powderblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    overflow: hidden;
+    
+
+}
+#main{
+    background-color: white; 
+    height: 100vh;
+    overflow: auto;
+    border: 1px solid rgb(88, 181, 224);
+    width: 100%;
+    max-width: 500px;  
+}
+#main .item{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    margin: 7px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0; 
+}
+.item:first-child{
+    z-index: 10;
+}
+.item button{
+    background-color: transparent;
+    border-color: blue;
+    color: blue;
+    font-weight: bold;
+}
+.ctabtn{
+    color: white;
+    background-color: rgb(25, 25, 223);
+}
+button{
+    cursor: pointer;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button:active{
+    transform: scale(1.02);
+}
+.addtask{
+    text-align: center;
+    margin-top: 15px;
+}
+.pasttask{
+    text-align: center;
+}
+.input{
+    display: block;
+    margin: auto;
+    width: 75%;
+    margin: 5px auto;
+    padding: 3px 7px;
+    max-height: 110px;
+}
+.welcome{
+    color: white;
+    background-color: rgb(215, 54, 255);
+    padding: 2px 10px;
+    margin: 7px 0;
+    border-radius: 5px;
+}
+h2{
+    margin: 10px;
+    color: rgb(217, 255, 48);
+    background-color: rgb(255, 90, 90);
+    border-radius: 5px;
+}
+.task{
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+    width: 95%;
+    margin: 5px auto;
+}
+.desc{
+    font-size: 11px;
+}
+hr{
+    border-color: rgb(243, 243, 243);
+}
+.tasklist{
+    max-height: calc(100vh - 15px);
+    overflow: auto;
+    position: sticky;
+    top: 10vh;
+}
+.task{
+    padding: 5px;
+}
+.task h4{
+    margin: 5px 0;
+}
+.task h4:nth-child(2){
+    color: gray;
+}
+.red{
+    color: red !important;
+    border-color: red !important;
+}
+.done{
+    background-color: rgb(109, 255, 109) !important;
+}
+.done .item{
+    background-color: rgb(109, 255, 109) !important; 
+}
+.hide{
+    display: none;
+}
+.notdone{
+    background-color: rgb(255, 175, 109) !important;
+}
+#inpdate{
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: grey;
+    color: grey;
+    cursor: pointer;
+}
+.taskslist{
+    margin: 10px auto;
+    width: 90%;
+    border: 1px solid grey;
+    padding: 10px 0;
+    height: 20px;
+    transition: height 1s ease;
+    -o-transition: height 1s ease;
+    -webkit-transition: height 1s ease;
+    border-radius: 5px;
+    background-color: rgb(255, 224, 224);
+    overflow: hidden;
+}
+h3 span{
+    color: green;
+}
+.taskslist h3{
+    color: rgb(106, 22, 184);
+}
+.arrow{
+    border: solid rgb(34, 34, 34);
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 4px;
+    cursor: pointer;
+}
+.down{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.up{
+    transform: rotate(-135deg); 
+    -webkit-transform: rotate(-135deg);
+} 
+.list{
+    max-height: calc(100% - 20px);
+    overflow: auto;
+}
+.listitem{
+    background-color: white;
+    padding: 5px 10px;
+    border-bottom: 1px solid grey;
+    margin: 5px 0;
+}
+.listitem h4{
+    font-size: 12px;
+}
+.listitem p{
+    font-size: 12px;
+}

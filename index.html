@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task list</title>
+</head>
+
+<body>
+    <div id="main">
+        <div class="item"><button onclick="navigate('Home')">Home</button>
+            <button onclick="navigate('Past')">View past tasks</button>
+        </div>
+        <div class="addtask">
+            <span class="welcome">Welcome to <span id="date"></span></span>
+            <h2>Add today's task</h2>
+            <input type="text" class="input" placeholder="task's title here">
+            <textarea class="input" placeholder="task's description here" cols="30" rows="10"></textarea>
+            <button class="ctabtn" onclick="addTask()">Add the task</button>
+        </div>
+        <div class="tasklist">
+            <!-- JS WILL ADD TASKS HERE -->
+        </div>
+        <div class="pasttask hide"><br>
+            <h2>Your tasks history</h2><br>
+            <div class="tasklistcontainer">
+                <!-- JS WILL ADD TASKSLISTS HERE -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
