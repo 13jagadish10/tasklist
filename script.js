@@ -58,6 +58,7 @@ const addTask = () => {
         window.location.reload();
     }
 }
+if(!(tasks.length>0)){ document.querySelector('.tasklist').innerHTML=`<center><br><h1 style="color: grey;">Enjoy<br> your <br>day <br> ...</h1></center>`}
 tasks && tasks.map(task => {
     document.querySelector('.tasklist').innerHTML += `
     <div class="task ${task.done && "done"}">
@@ -88,9 +89,11 @@ const task_done = (id) => {
 }
 
 const show_past_tasks = () => { 
-    let tasklist = getAllTasks()
     let parent_container = document.querySelector('.tasklistcontainer')
-    let n = 0
+    parent_container.innerHTML =""
+    let tasklist = getAllTasks()
+    let n = 0 
+    if(Object.keys(tasklist).length===0){ parent_container.innerHTML=`<center><br><h1 style="color: grey;">You<br> have <br>no <br> task <br> history</h1></center>`}
     for (let date in allTasks) {
         let dones = 0; 
         let array_of_obj = allTasks[date]
