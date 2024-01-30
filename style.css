@@ -15,8 +15,6 @@ body{
     justify-content: center;
     align-items: center;
     max-height: 100vh; 
-    
-
 }
 #main{
     background-color: white; 
@@ -43,7 +41,11 @@ body{
     background-color: transparent;
     border-color: blue;
     color: blue;
-    font-weight: bold;
+    font-weight: bold; 
+    margin-top: 5px;
+    font-size: 13px;
+}
+.navbtn{
     padding: 7px 15px;
     margin-top: 15px;
     font-size: 15px;
